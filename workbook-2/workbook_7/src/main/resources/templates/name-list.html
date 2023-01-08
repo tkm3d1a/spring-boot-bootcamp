@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name</title>
+    </head>
+    <body>
+        <p style="font-weight: bold;" th:text="${name}"></p>
+        <ul>
+            <!-- This really should be improved to be parametric instead of hard coded
+            Thyme leaf has loop methods and this should be revisited -->
+            <li th:text="${#strings.substring(name, 0, 1)}"></li>
+            <li th:text="${#strings.substring(name, 0, 2)}"></li>
+            <li th:text="${#strings.substring(name, 0, 3)}"></li>
+        </ul>
+    </body>
+</html>
